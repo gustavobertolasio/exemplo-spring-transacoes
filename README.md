@@ -16,6 +16,14 @@ Para rodar o projeto, é preciso selecionar qual SDK será utilizada.
 
 Após selecionar a SDK, abra o arquivo TransacoesApplication e rode sua função main.
 
+O ambiente fica disponível em: `http://localhost:8080/`
+
+As rotas disponíveis são:
+
+`/operation/{scheduledTransferDate}` para recuperar taxa do dia
+`/operation/all` para recuperar todas as operações agendadas
+`/operation/transfer` para realizar a transferência
+
 ## Testes
 Atualmente existem duas contas registradas no projeto: 1122334455 e 1122334456.
 
