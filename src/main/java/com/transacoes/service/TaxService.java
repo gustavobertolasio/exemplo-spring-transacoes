@@ -1,17 +1,14 @@
 package com.transacoes.service;
 
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.time.LocalDate;
 
 @Service
 public class TaxService {
-    @Autowired
-    public TaxService() {}
-
     public Double getTaxByScheduledTransferDate(LocalDate scheduledTransferDate) {
         final int daysDiff = scheduledTransferDate.compareTo(LocalDate.now());
+
         return getTransferTax(daysDiff);
     }
 

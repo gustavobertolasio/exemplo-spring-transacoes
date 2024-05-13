@@ -18,7 +18,10 @@ repositories {
 dependencies {
 	implementation("org.springframework.boot:spring-boot-starter")
 	implementation("org.springframework.boot:spring-boot-starter-web")
-	implementation ("org.modelmapper:modelmapper:2.1.1")
+	implementation("org.springframework.boot:spring-boot-starter-data-jpa")
+	implementation ("org.modelmapper:modelmapper:3.2.0")
+	implementation("com.h2database:h2:2.2.224")
+
 	testImplementation("org.springframework.boot:spring-boot-starter-test")
 
 	compileOnly ("org.projectlombok:lombok:1.18.32")
